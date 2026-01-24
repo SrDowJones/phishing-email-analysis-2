@@ -1,0 +1,26 @@
+[1] The sender address attempted to impersonate a cloud storage provider named Cloud Storage. 
+Analysis of the sending IP address confirmed that the email originated from Microsoft Outlook infrastructure, indicating that the message was not legitimately sent by the Cloud Storage organization.
+
+[2] The sending server IP address 52.102.202.60 was identified as belonging to Microsoft-owned infrastructure. Despite this, external reputation analysis using AbuseIPDB indicated a 35% confidence of abusive activity associated
+with this IP address. Given that the IP address is geolocated to South Korea and does not support legitimate business communications for the recipient, the decision was made to block the IP address. 
+Blocking this IP was determined to have no anticipated negative operational impact. The sender email address HELLO@CLOUDSTORAGESQ5.COM was identified as malicious. 
+Blocking this sender prevents further emails from this source and poses no risk to legitimate communications, as the domain is not associated with any authorized or trusted sender.
+
+[3] Sender email address blocked:
+      HELLO@CLOUDSTORAGESQ5.COM on 24 January at 3:46 PM
+
+    Sending IP address blocked:
+      52.102.202.60 on 24 January at 4:15 PM
+
+[4] The embedded URL resolved to the domain leaseweb.com, with IP address 178.162.245.96, geolocated to Germany. Leaseweb was identified as an Infrastructure-as-a-Service (IaaS) provider.
+Blocking the Leaseweb domain proved ineffective in preventing additional phishing attempts. As the emails were delivered via trusted Microsoft email infrastructure, 
+IP-based blocking is not a viable long-term mitigation strategy. Additionally, domain-based blocking of cloud service providers offers limited effectiveness, as attackers can rapidly migrate to new infrastructure.
+
+[5] To reduce the likelihood of repeated phishing attempts, the following additional mitigation steps were implemented:
+    Blocked the malicious sender address
+    Created an email filtering rule to automatically delete messages containing the subject line:
+
+    "Your Account is Blocked" Filtering rule added: 24 January at 4:40 PM
+
+
+
